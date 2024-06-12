@@ -40,5 +40,12 @@ def image_to_ascii(image_path, output_file="ascii_art.txt", new_width=100):
     
     print(f"ASCII art written to {output_file}")
 
-image_path = ""
+image_path = "input/n.jpg"
 image_to_ascii(image_path)
+
+def print_output_in():
+    f = open('ascii_art.txt', 'r')
+    file_contents = f.read()
+
+    print(file_contents)
+    f.close()
